@@ -1,0 +1,154 @@
+.footer {
+    display: flex;
+    padding: 40px 75px;
+    background-color: #1e212c;
+}
+
+.footerContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.subscribeContainer {
+    text-align: right;
+    margin-top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.subscriptionWrapper {
+    width: 500px;
+}
+
+.subscribeContainer h2 {
+    margin-right: 180px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.emailInput {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 40px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #ffcb08;
+    color: black;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .footer {
+        padding: 40px 75px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .subscribeContainer h2 {
+        margin-right: 180px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer {
+        padding: 30px 60px;
+    }
+    .logo {
+        width: 175px;
+    }
+    .subscribeContainer h2 {
+        margin-right: 150px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        padding: 20px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footerContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    .subscribeContainer {
+        text-align: left;
+        height: auto;
+    }
+    .subscribeContainer h2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .footer {
+        padding: 20px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footerContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    .subscribeContainer {
+        text-align: left;
+        height: auto;
+    }
+    .subscribeContainer h2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .formContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .emailInput {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
