@@ -20,21 +20,27 @@
     margin-left: 75px;
 }
 
-.btn
-{
+.btn {
     background-color: #ffcb08;
     color: black;
-    width: 230px;
-    height: 70px;
+    width: 240px;
+    height: 60px;
     display: flex;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     border: none;
-    border-radius: 100px;
-    margin-top: 20px;
+    border-radius: 10px;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+    background-color: gray;
+    color: white;
 }
 
 .section
@@ -132,4 +138,117 @@
 {
     max-width: 800px;
     height: auto;
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: auto;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+
+    .header h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .marg {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        padding: 4px 8px;
+        margin: 0 auto;
+    }
+
+    .section, .sectionsec {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section h1, .sectionsec h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imageContainer {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        order: -1;
+    }
+
+    .imageBox {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .imageText {
+        font-size: 14px;
+    }
+
+    .imageSubtitle {
+        font-size: 8px;
+    }
+
+    .imageContainersec {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        height: 500px;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 80px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .section, .sectionsec {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section h1, .sectionsec h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .imageContainer {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        order: -1;
+    }
+
+    .imageBox {
+        width: 150px;
+        height: 150px;
+    }
+
+    .imageText {
+        font-size: 16px;
+    }
+
+    .imageSubtitle {
+        font-size: 10px;
+    }
+
+    .imageContainersec {
+        display: none;
+    }
 }

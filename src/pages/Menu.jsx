@@ -21,29 +21,21 @@ function Menu(props) {
         <div className={MenuClasses.imageContainer}>
           <div className={MenuClasses.imageBox}>
             <div className={MenuClasses.imageOverlay}>
-              <span className={MenuClasses.imageText}>3000</span>
-              <span className={MenuClasses.imageSubtitle}>тыс. унц. золота<br />добыто в 2023 году</span>
             </div>
             <img src={props.pl1} alt="img1"/>
           </div>
           <div className={MenuClasses.imageBox}>
             <div className={MenuClasses.imageOverlay}>
-                <span className={MenuClasses.imageText}>4</span>
-                <span className={MenuClasses.imageSubtitle}>месторождения<br />золота</span>
             </div>
             <img src={props.pl2} alt="img2"/>
           </div>
           <div className={MenuClasses.imageBox}>
             <div className={MenuClasses.imageOverlay}>
-                <span className={MenuClasses.imageText}>15</span>
-                <span className={MenuClasses.imageSubtitle}>лет<br />в деле</span>
             </div>
             <img src={props.pl3} alt="img3"/>
           </div>
           <div className={MenuClasses.imageBox}>
             <div className={MenuClasses.imageOverlay}>
-                <span className={MenuClasses.imageText}>5</span>
-                <span className={MenuClasses.imageSubtitle}>в мировом<br />списке</span>
             </div>
             <img src={props.pl4} alt="img4"/>
           </div>

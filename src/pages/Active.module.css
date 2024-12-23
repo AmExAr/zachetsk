@@ -1,54 +1,115 @@
-.map
-{
+.map {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 72px 75px;
+    width: 100%;
 }
 
-.h
-{
+.map img {
+    width: 50%;
+    height: auto;
+}
+
+.h {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 75px;
     font-family: 'Roboto';
     font-size: 70px;
+    text-align: center;
 }
 
-.container
-{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-    margin: 20px;
-}
-
-.column
-{
+.container {
     display: flex;
     flex-direction: column;
-    flex: 1; 
-    margin: 0px 10px; 
+    gap: 20px;
+    align-items: center;
 }
 
-.circle_image
-{
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-bottom: 20px; 
-    margin-left: 75px;
+.project {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
 }
 
-.text_item
-{
-    margin-bottom: 15px; 
+.circle_image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.text_itemsec
-{
-    margin-bottom: 40px; 
+.text_block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center; 
 }
 
+.text_block h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text_block p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .h {
+        font-size: 80px; 
+    }
+    .text_block h3 {
+        font-size: 18px;
+    }
+    .text_block p {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .h {
+        font-size: 70px;
+    }
+    .text_block h3 {
+        font-size: 16px;
+    }
+    .text_block p {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .h {
+        font-size: 60px;
+    }
+    .text_block h3 {
+        font-size: 14px;
+    }
+    .text_block p {
+        font-size: 12px;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .h {
+        font-size: 50px;
+    }
+    .text_block h3 {
+        font-size: 12px;
+    }
+    .text_block p {
+        font-size: 10px;
+    }
+}

@@ -1,45 +1,40 @@
-.header
-{
+.header {
     margin: 72px 0;
 }
 
-.par
-{
+.par {
     margin-left: 75px;
     margin-right: 75px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-.h
-{
+.h {
     display: flex;
     justify-content: center;
+    font-size: 40px;
 }
 
-.imgCont
-{
+.imgCont {
     margin: 72px 75px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 }
 
-.imgText
-{
-    font-size: 30px;
+.imgText {
+    font-size: 33px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
 
-.block
-{
+.block {
     width: 300px;
     height: 300px;
     position: relative;
 }
 
-.block img
-{
+.block img {
     width: 300px;
     height: 300px;
 }
@@ -59,44 +54,123 @@
     text-align: center;
 }
 
-.section
-{
+.section {
     background-color: #e8e8e8;
 }
 
-.form
-{
+.form {
     margin-top: 40px;
-    margin-left: 75px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.input 
-{
+.input {
     border: 1px solid #ccc;
-    border-radius: 10px;
-    height: 40px;
-    width: 300px;
+    border-radius: 20px;
+    height: 75px;
+    width: 500px;
     margin-bottom: 20px;
+    font-size: 24px;
+    padding-left: 20px;
 }
 
-.btn
-{
+.btn {
     background-color: #ffcb08;
     color: black;
-    width: 130px;
-    height: 40px;
+    width: 300px;
+    height: 75px;
     display: flex;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 0px;
     margin-bottom: 10px;
-    margin-left: 85px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+    background-color: gray;
+    color: white;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .par {
+        font-size: 28px;
+    }
+    .h {
+        font-size: 36px;
+    }
+    .imgText {
+        font-size: 30px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .par {
+        font-size: 24px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .h {
+        font-size: 32px;
+    }
+    .imgText {
+        font-size: 26px;
+    }
+    .imgCont {
+        flex-direction: column;
+        margin: 50px 20px;
+        gap: 20px;
+    }
+    .block {
+        width: 250px;
+        height: 250px;
+    }
+    .block img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .par {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .h {
+        font-size: 22px;
+    }
+    .imgText {
+        font-size: 19px;
+    }
+    .imgCont {
+        flex-direction: column;
+        margin: 30px 10px;
+        gap: 20px;
+    }
+    .block {
+        width: 200px;
+        height: 200px;
+    }
+    .block img {
+        width: 200px;
+        height: 200px;
+    }
+    .input {
+        width: 80%;
+    }
+    .btn {
+        width: 80%;
+    }
 }
