@@ -82,15 +82,16 @@ function About() {
                 <h1 className={AboutClasses.h}>Желаете пройти стажировку в нашей компании?</h1>
                 <h5 className={AboutClasses.h}>Заполните анкету и мы свяжемся с вами</h5>
                 <form className={AboutClasses.form} onSubmit={handleSubmit}>
-                    <input type='text' placeholder='Ваше Имя' className={AboutClasses.input} value={name} onChange={(e) => setName(e.target.value)} required />
-                    <input type='text' placeholder='Ваш Университет' className={AboutClasses.input} value={university} onChange={(e) => setUniversity(e.target.value)} required />
-                    <input type='text' placeholder='Ваша Фамилия' className={AboutClasses.input} value={surname} onChange={(e) => setSurname(e.target.value)} required />
-                    <input type='text' placeholder='Ваш Факультет' className={AboutClasses.input} value={faculty} onChange={(e) => setFaculty(e.target.value)} required />
-                    <input type='tel' placeholder='Ваш телефон' className={AboutClasses.input} value={phone} onChange={(e) => setPhone(e.target.value)} required />
-                    <input type='number' placeholder='На каком курсе вы обучаетесь?' className={AboutClasses.input} value={course} onChange={(e) => setCourse(e.target.value)} required />
-                    <input type='email' placeholder='Ваш E-mail' className={AboutClasses.input} value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <input type='text' placeholder='Ваша Специальность' className={AboutClasses.input} value={specialty} onChange={(e) => setSpecialty(e.target.value)} required />
-                    
+                <div className={AboutClasses.inputsContainer}>
+                  <input type='text' placeholder='Ваше Имя' className={AboutClasses.input} required />
+                  <input type='text' placeholder='Ваша Фамилия' className={AboutClasses.input} required />
+                  <input type='tel' placeholder='Ваш телефон' className={AboutClasses.input} required />
+                  <input type='email' placeholder='Ваш E-mail' className={AboutClasses.input} required />
+                  <input type='text' placeholder='Ваш Университет' className={AboutClasses.input} required />
+                  <input type='text' placeholder='Ваш Факультет' className={AboutClasses.input} required />
+                  <input type='number' placeholder='На каком курсе вы обучаететсь?' className={AboutClasses.input} required />
+                  <input type='text' placeholder='Ваша Специальность' className={AboutClasses.input} required />
+                </div>
                     <button className={AboutClasses.btn}>Отправить</button>
                 </form>
             </section>
