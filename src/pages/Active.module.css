@@ -32,7 +32,7 @@
     align-items: center;
     gap: 20px;
     padding: 15px;
-    justify-content: center;
+    justify-content: flex-start; 
 }
 
 .circle_image {
@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    align-items: center; 
+    align-items: flex-start;
 }
 
 .text_block h3 {
@@ -72,6 +72,9 @@
     }
     .text_block p {
         font-size: 16px;
+    }
+    .project {
+        gap: 70px;
     }
 }
 

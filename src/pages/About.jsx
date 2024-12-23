@@ -14,15 +14,16 @@ function About() {
         <h1 className={AboutClasses.h}>Желаете пройти стажировку в нашей компании?</h1>
         <h5 className={AboutClasses.h}>Заполните анкету и мы свяжемся с вами</h5>
         <form className={AboutClasses.form}>
-          <input type='text' placeholder='Ваше Имя' className={AboutClasses.input} required />
-          <input type='text' placeholder='Ваша Фамилия' className={AboutClasses.input} required />
-          <input type='tel' placeholder='Ваш телефон' className={AboutClasses.input} required />
-          <input type='email' placeholder='Ваш E-mail' className={AboutClasses.input} required />
-          <input type='text' placeholder='Ваш Университет' className={AboutClasses.input} required />
-          <input type='text' placeholder='Ваш Факультет' className={AboutClasses.input} required />
-          <input type='number' placeholder='На каком курсе вы обучаететсь?' className={AboutClasses.input} required />
-          <input type='text' placeholder='Ваша Специальность' className={AboutClasses.input} required />
-          
+          <div className={AboutClasses.inputsContainer}>
+            <input type='text' placeholder='Ваше Имя' className={AboutClasses.input} required />
+            <input type='text' placeholder='Ваша Фамилия' className={AboutClasses.input} required />
+            <input type='tel' placeholder='Ваш телефон' className={AboutClasses.input} required />
+            <input type='email' placeholder='Ваш E-mail' className={AboutClasses.input} required />
+            <input type='text' placeholder='Ваш Университет' className={AboutClasses.input} required />
+            <input type='text' placeholder='Ваш Факультет' className={AboutClasses.input} required />
+            <input type='number' placeholder='На каком курсе вы обучаететсь?' className={AboutClasses.input} required />
+            <input type='text' placeholder='Ваша Специальность' className={AboutClasses.input} required />
+          </div>
           <button className={AboutClasses.btn}> Отправить </button>
         </form>
       </section>
