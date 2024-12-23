@@ -20,19 +20,10 @@ import cr4 from './img/круг4.png'
 import block1 from './img/блок1.png'
 import block2 from './img/блок2.png'
 import block3 from './img/блок3.png'
-import favicon from './img/favicon.ico'
-import { Helmet } from 'react-helmet';
-
 
 function App() {
   return (
     <>
-      <Helmet>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Рудник</title>
-        <link rel="icon" href={favicon} />
-      </Helmet>
       <Navigation img={logo}/>
       <Routes>
         <Route path='/' element={<Menu pl1 = {pl1} pl2 = {pl2} pl3 = {pl3} pl4 = {pl4} map = {map}/>}/>
